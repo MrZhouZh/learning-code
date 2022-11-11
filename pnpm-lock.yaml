@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^18.11.9
@@ -9,7 +9,7 @@ specifiers:
 dependencies:
   '@types/node': 18.11.9
   promises-aplus-tests: 2.1.2
-  ts-node: 10.9.1_1049f756a027b302b59330a6f33f12ef
+  ts-node: 10.9.1_cbe7ovvae6zqfnmtgctpgpys54
   typescript: 4.8.4
 
 packages:
@@ -98,10 +98,16 @@ packages:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
     dev: false
 
-  /debug/2.2.0:
+  /debug/2.2.0_supports-color@1.2.0:
     resolution: {integrity: sha512-X0rGvJcskG1c3TgSCPqHJ0XJgwlcvOC7elJ5Y0hYuKBZoVqWpAMfLOeIh2UI/DCQ5ruodIjvsugZtjUYUw2pUw==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 0.7.1
+      supports-color: 1.2.0
     dev: false
 
   /diff/1.4.0:
@@ -267,7 +273,7 @@ packages:
     hasBin: true
     dependencies:
       commander: 2.3.0
-      debug: 2.2.0
+      debug: 2.2.0_supports-color@1.2.0
       diff: 1.4.0
       escape-string-regexp: 1.0.2
       glob: 3.2.11
@@ -321,7 +327,7 @@ packages:
     deprecated: to-iso-string has been deprecated, use @segment/to-iso-string instead.
     dev: false
 
-  /ts-node/10.9.1_1049f756a027b302b59330a6f33f12ef:
+  /ts-node/10.9.1_cbe7ovvae6zqfnmtgctpgpys54:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
