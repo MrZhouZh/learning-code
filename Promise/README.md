@@ -12,9 +12,13 @@ title: 实现符合 Promise/A+ 规范的 Promise (中文翻译)
 ## 1. 术语
 
 1.1. "promise" 是遵循本规范的一个有 `then` 方法的对象或函数.
+
 1.2. "thenable" 是一个定义 `then` 方法的对象或函数.
+
 1.3. "value" 是任何合法的 JavaScript 值(包括 `undefined`, thenable 或 promise).
+
 1.4. "exception" 是使用 `throw` 语句抛出的值.
+
 1.5. "reason" 表示 promise 状态为 rejected 的值.
 
 ## 2. 要求
@@ -24,14 +28,19 @@ title: 实现符合 Promise/A+ 规范的 Promise (中文翻译)
 promise 必须处于以下三种状态之一: pending, fulfilled 或 rejected.
 
 2.1.1. 当 promise 处于 pending 状态时:
+
 2.1.1.1. 可以过渡为 fulfilled 或 rejected 状态
 
 2.1.2. 当 promise 处于 fulfilled 状态时:
+
 2.1.2.1. 不会过渡到其他状态
+
 2.1.2.2. 必须有一个不可变的 value 值
 
 2.1.3. 当 promise 处于 rejected 状态时:
+
 2.1.3.1. 不会过渡到其他状态
+
 2.1.3.2. 必须有一个不可变的 reason 值
 
 这里的 "不可变" 指的是恒等式(例如: `===`), 但并不意味着深层的不可变性
