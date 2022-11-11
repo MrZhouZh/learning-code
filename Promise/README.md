@@ -77,9 +77,9 @@ promise.then(onFulfilled, onRejected);
 
 2.2.3.3. `onRejected` 只能被调用一次
 
-2.2.4. 除非执行[上下文](https://es5.github.io/#x10.3)栈只包含"平台代码"[[3.1](#3.1.)], 否则不能调用 `onFulfilled` 或 `onRejected`. 微任务
+2.2.4. 除非执行[上下文](https://es5.github.io/#x10.3)栈只包含"平台代码"[[3.1](#31)], 否则不能调用 `onFulfilled` 或 `onRejected`. 微任务
 
-2.2.5. `onFulfilled` 和 `onRejected` 必须作为函数被调用.[[3.2](#3.2.)]
+2.2.5. `onFulfilled` 和 `onRejected` 必须作为函数被调用.[[3.2](#32)]
 
 2.2.6. `then` 方法可能被多次调用
 
@@ -87,7 +87,7 @@ promise.then(onFulfilled, onRejected);
 
 2.2.6.2. 如果当 `promise` 是 rejected 状态时, 所有的 `onRejected` 回调都必须按照 `then` 的顺序执行
 
-2.2.7. `then` 必须返回一个 promise [[3.3](#3.3.)]
+2.2.7. `then` 必须返回一个 promise [[3.3](#33)]
 
 ```js
 promise2 = promise1.then(onFulfilled, onRejected);
@@ -111,7 +111,7 @@ promise2 = promise1.then(onFulfilled, onRejected);
 
 2.3.1. 如果 `promise` 和 `x` 相等, 那么 reject 一个 `TypeError` 的 `promise`.
 
-2.3.2. 如果 `x` 是一个 promise, 采取其状态[[3.4](#3.4.)]:
+2.3.2. 如果 `x` 是一个 promise, 采取其状态[[3.4](#34)]:
 
 2.3.2.1. 如果 `x` 是 `pending` 状态, `promise` 必须保持 `pending` 状态直到 `x` 变成 `fulfilled` 或 `rejected` 状态.
 
@@ -121,7 +121,7 @@ promise2 = promise1.then(onFulfilled, onRejected);
 
 2.3.3. 另外, 如果 `x` 是一个 `object` 或 `function` 类型,
 
-2.3.3.1. 让 `then` = `x.then`. [[3.5](#3.5.)]
+2.3.3.1. 让 `then` = `x.then`. [[3.5](#35)]
 
 2.3.3.2. 如果 `x.then` 抛出异常 `e`, reject `reason` 为 `e` 的 `promise`.
 
