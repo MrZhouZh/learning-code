@@ -7,9 +7,21 @@ const colors = ["黑色", "白色"],
     length = ["长款", "短款"],
     material = ["棉质", "涤纶"],
     sizes = ["S", "M", "L"];
-const res = descartes([colors, length, material, sizes]);
 
-console.log(res, '-- descartes res')
+describe('generate descartes', () => {
+    test('generate two-dimensional array', () => {
+        const res = descartes([colors, length, material, sizes]);
+        expect(res[0]).toContain('黑色')
+        expect(res[0]).toContain('长款')
+        expect(res[0]).toContain('棉质')
+        expect(res[0]).toContain('S')
+        expect(res[0]).toHaveLength(4)
+    })
+})
+
+// const res = descartes([colors, length, material, sizes]);
+
+// console.log(res, '-- descartes res')
 
 // output:
 // [
