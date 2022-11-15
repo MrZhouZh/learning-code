@@ -8,7 +8,8 @@
     "tsc": "tsc",
     "build:jpromise": "tsc -t es5 ./Promise/index.ts",
     "test:jpromise": "promises-aplus-tests ./Promise/index.js",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "pnpm run test --coverage"
   },
   "author": "Jace Chou",
   "license": "MIT",

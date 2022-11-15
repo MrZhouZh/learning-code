@@ -20,5 +20,9 @@ const descartes = function (skuAttrs = []) {
   });
 };
 
+// console.log(descartes([
+//   ["黑色", "白色"]
+// ]))
+
 module.exports = descartes;
 // export default descartes;

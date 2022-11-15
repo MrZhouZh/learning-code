@@ -17,6 +17,11 @@ describe('generate descartes', () => {
         expect(res[0]).toContain('S')
         expect(res[0]).toHaveLength(4)
     })
+
+    test('descartes length equals 1', () => {
+        const res = descartes([colors]);
+        expect(res).toHaveLength(2)
+    })
 })
 
 // const res = descartes([colors, length, material, sizes]);

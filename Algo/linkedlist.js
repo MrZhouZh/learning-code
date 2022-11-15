@@ -1,5 +1,3 @@
-const { log } = require("console");
-
 class Node {
   constructor(name) {
     this.name = name;
@@ -24,9 +22,9 @@ class LinkedList {
 
   // 插入节点
   insert(name, node) {
-    if (node && node === -1) {
-      console.log(`未找到插入位置`);
-      return;
+    if (!node || node === -1) {
+      // console.log(`未找到插入位置`);
+      return false;
     }
     const newNode = new Node(name);
     newNode.next = node.next;
@@ -38,8 +36,8 @@ class LinkedList {
     const prevNode = this.findPrev(node);
 
     if (prevNode === -1) {
-      console.log(`未找到元素`);
-      return;
+      // console.log(`未找到元素`);
+      return false;
     }
     prevNode.next = prevNode.next.next;
   }
@@ -66,8 +64,8 @@ class LinkedList {
 
   // 根据 index 查找节点
   findByIndex(index) {
-    let currentNode = this.head.next,
-      pos = 0;
+    let currentNode = this.head.next;
+    let pos = 0;
 
     while (currentNode !== null && pos !== index) {
       currentNode = currentNode.next;
@@ -90,14 +88,14 @@ class LinkedList {
   }
 
   // 打印所有节点
-  print() {
-    let currentNode = this.head.next;
-    while (currentNode !== null) {
-      console.log(currentNode.name);
-      currentNode = currentNode.next;
-    }
-    console.log("\n");
-  }
+  // print() {
+  //   let currentNode = this.head.next;
+  //   while (currentNode !== null) {
+  //     // console.log(currentNode.name);
+  //     currentNode = currentNode.next;
+  //   }
+  //   // console.log("\n");
+  // }
 
   // 反转单向链表
   reverse() {
