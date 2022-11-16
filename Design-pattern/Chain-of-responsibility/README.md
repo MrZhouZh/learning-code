@@ -30,3 +30,11 @@ title: 行为模式 - 职责链
 - 已经支付过 500 元定金的用户会收到 100 元商城优惠券,
 - 200 元定金的用户会收到 50 元商城优惠券
 - 没支付定金的则进入普通购买模式, 没有优惠券, 而且在库存有限的情况下不一定保证能买到
+
+## 代码示例
+
+- [实现示例](./chain-of-responsibility.js)
+
+- [AOP实现](./chain-of-responsibility-aop.js)
+
+- [Upload示例](./chain-of-responsibility-upload.js)

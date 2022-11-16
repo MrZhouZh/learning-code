@@ -2,6 +2,9 @@
 title: 算法学习
 ---
 
+
+## 代码示例
+
 - [笛卡尔积](./descartes.js)
 
 - [链表](./linkedlist.js)

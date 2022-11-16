@@ -4,7 +4,8 @@
   "description": "keep learning",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node",
+    "start": "pnpm run test --coverage",
+    "dev": "ts-node",
     "tsc": "tsc",
     "build:jpromise": "tsc -t es5 ./Promise/index.ts",
     "test:jpromise": "promises-aplus-tests ./Promise/index.js",

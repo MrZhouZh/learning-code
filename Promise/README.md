@@ -178,3 +178,9 @@ then 必须返回 promise
 如何对待 thenable chain
 
 实例不应该对 thenable 链的深度设置任意限制, 并假设递归超出任意限制, 递归会无穷. 只有真正的循环才会导致 `TypeError`. 如果遇到 thenables 的无限链, 那么永远递归就是正确的行为
+
+## 代码示例
+
+- [TypeScript实现](./index.ts)
+
+- [TypeScript 编译后 JavaScript](./index.js)
