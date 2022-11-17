@@ -8,8 +8,8 @@ const colors = ["黑色", "白色"],
     material = ["棉质", "涤纶"],
     sizes = ["S", "M", "L"];
 
-describe('generate descartes', () => {
-    test('generate two-dimensional array', () => {
+describe('descartes test', () => {
+    test('descartes normal', () => {
         const res = descartes([colors, length, material, sizes]);
         expect(res[0]).toContain('黑色')
         expect(res[0]).toContain('长款')
@@ -21,6 +21,11 @@ describe('generate descartes', () => {
     test('descartes length equals 1', () => {
         const res = descartes([colors]);
         expect(res).toHaveLength(2)
+    })
+
+    test('decartes length equals 0', () => {
+        const res = descartes()
+        expect(res).toHaveLength(0)
     })
 })
 

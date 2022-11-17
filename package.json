@@ -10,7 +10,9 @@
     "build:jpromise": "tsc -t es5 ./Promise/index.ts",
     "test:jpromise": "promises-aplus-tests ./Promise/index.js",
     "test": "jest",
-    "coverage": "pnpm run test --coverage"
+    "coverage": "pnpm run test --coverage",
+    "build:observer": "tsc -t es5 ./Design-pattern/Observer/Observer.ts",
+    "test:observer": "node ./Design-pattern/Observer/Observer.js"
   },
   "author": "Jace Chou",
   "license": "MIT",
