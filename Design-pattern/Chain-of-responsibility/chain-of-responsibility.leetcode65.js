@@ -13,13 +13,13 @@ class Chain {
     }
 
     passRequest(...args) {
-        const ret = this.handler.apply(this, ...args)
+        const ret = this.handler.apply(this, args)
         // 提前结束
         if (ret) return ret
 
         // 向后传递
         if(this.next) {
-            return this.next.passRequest.apply(this.next, ...args)
+            return this.next.passRequest.apply(this.next, args)
         }
 
         return ret

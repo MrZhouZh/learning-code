@@ -45,7 +45,7 @@ function preProcessing(v) {
 // 整数
 function isInteger(integer) {
     const _integer = preProcessing(integer)
-    if (!integer) return false
+    if (!_integer) return false
     for (let i = 0, len = _integer.length; i < len; i++) {
         if (!/[0-9]/.test(_integer.charAt(i))) {
             return false
@@ -118,7 +118,7 @@ function isScienceFormat(str) {
     function validatePartAfterE(second) {
         if (!second) return false
         if (!checkHeadAndEndForSpace(second)) return false
-        if (!isInteger) return false
+        if (!isInteger(second)) return false
 
         return true
     }
@@ -133,29 +133,58 @@ function isScienceFormat(str) {
 
 // 十六进制
 function isHex(hex) {
-    const _hex = preProcessing(hex)
-    if (!_hex) return false
-    let hexLowerCase = _hex.toLowerCase()
+    // const _hex = preProcessing(hex)
+    // if (!_hex) return false
+    // let hexLowerCase = _hex.toLowerCase()
+
+    // function isValidChar(c) {
+    //     const validChar = ['a', 'b', 'c', 'd', 'e', 'f']
+    //     for (let i = 0, len = validChar.length; i < len; i++) {
+    //         if (c === validChar[i]) return true
+    //     }
+    //     return false
+    // }
+
+    // if (hexLowerCase.startsWith('0x')) {
+    //     hexLowerCase = hexLowerCase.substring(2)
+    // } else {
+    //     return false
+    // }
+
+    // for (let i = 0, len = hexLowerCase.length; i < len; i++) {
+    //     if (!/[0-9]/.test(hexLowerCase.charAt(0)) && !isValidChar(hexLowerCase.charAt(i))) return false
+    // }
+
+    // return true
 
     function isValidChar(c) {
-        const validChar = ['a', 'b', 'c', 'd', 'e', 'f']
-        for (let i = 0, len = validChar.length; i < len; i++) {
-            if (c === validChar[i]) return true
+        const validChar = ["a", "b", "c", "d", "e", "f"];
+        for (let i = 0; i < validChar.length; i++) {
+            if (c === validChar[i]) {
+                return true;
+            }
         }
-        return false
-    }
 
-    if (hexLowerCase.startsWith('0x')) {
-        hexLowerCase = hexLowerCase.substring(2)
+        return false;
+    }
+    hex = preProcessing(hex);
+    if (!hex) {
+        return false;
+    }
+    hex = hex.toLowerCase();
+    if (hex.startsWith("0x")) {
+        hex = hex.substring(2);
     } else {
-        return false
+        return false;
     }
 
-    for (let i = 0, len = hexLowerCase.length; i < len; i++) {
-        if (!/[0-9]/.test(hexLowerCase.charAt(0)) && !isValidChar(hexLowerCase.charAt(i))) return false
+    for (let i = 0; i < hex.length; i++) {
+        if (!/[0-9]/.test(hex.charAt(0)) && !isValidChar(hex.charAt(i))) {
+            return false;
+        }
     }
 
-    return true
+    return true;
 }
 
 const isNumber = (s) => {
@@ -169,6 +198,44 @@ const isNumber = (s) => {
         .setNext(isHexHandler)
 
     return isIntegerHandler.passRequest(s)
+
+    // 摘自: https://leetcode.cn/problems/valid-number/solution/biao-qu-dong-fa-by-user8973/
+    // 有限状态机
+    // let state = 0,
+    //     finals = [0, 0, 0, 1, 0, 1, 1, 0, 1],
+    //     transfer = [
+    //         [0, 1, 6, 2, -1, -1],
+    //         [-1, -1, 6, 2, -1, -1],
+    //         [-1, -1, 3, -1, -1, -1],
+    //         [8, -1, 3, -1, 4, -1],
+    //         [-1, 7, 5, -1, -1, -1],
+    //         [8,-1, 5,-1, -1, -1],
+    //         [8, -1, 6, 3, 4, -1],
+    //         [-1, -1, 5, -1, -1, -1],
+    //         [8, -1, -1, -1, -1, -1]
+    //     ],
+    //     make = (c) => {
+    //         switch (c) {
+    //             case ' ': return 0;
+    //             case '+':
+    //             case '-': return 1;
+    //             case '.': return 3;
+    //             case 'e': return 4;
+    //             default:
+    //                 let code = c.charCodeAt();
+    //                 if (code >= 48 && code <= 57) {
+    //                     return 2
+    //                 } else {
+    //                     return 5
+    //                 }
+    //         }
+    //     }
+    // for (let i = 0, len = s.length; i < len; i++) {
+    //     state = transfer[state][make(s[i])]
+    //     if (state < 0) return false
+    // }
+
+    // return finals[state]
 }
 
 module.exports = isNumber
