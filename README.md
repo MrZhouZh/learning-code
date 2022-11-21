@@ -8,11 +8,20 @@ keep learning
 # install
 pnpm i
 
+# 测试
+pnpm test
+
+# or
+pnpm test -- [目录路径]
+
+# 测试覆盖率
+pnpm start
+
 # promise 编译
-pnpm run build:jpromise
+pnpm build:jpromise
 
 # promise 测试
-pnpm run test:jpromise
+pnpm test:promise [promise文件路径]
 ```
 
 ## Content

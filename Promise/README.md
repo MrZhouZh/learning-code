@@ -184,3 +184,5 @@ then 必须返回 promise
 - [TypeScript实现](./index.ts)
 
 - [TypeScript 编译后 JavaScript](./index.js)
+
+- [纯js版实现](./simple-promise.js)

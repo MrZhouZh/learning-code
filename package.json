@@ -12,7 +12,8 @@
     "test": "jest",
     "coverage": "pnpm run test --coverage",
     "build:observer": "tsc -t es5 ./Design-pattern/Observer/Observer.ts",
-    "test:observer": "node ./Design-pattern/Observer/Observer.js"
+    "test:observer": "node ./Design-pattern/Observer/Observer.js",
+    "test:promise": "promises-aplus-tests"
   },
   "author": "Jace Chou",
   "license": "MIT",
