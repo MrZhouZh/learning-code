@@ -1,13 +1,11 @@
 ---
-title: JavaScript 基础
+title: 基础学习
 ---
 
-## 代码示例
+## Content
 
-- [数组铺平实现](./flattern.js)
+- [JavaScript 基础](./JavaScript/README.md)
 
-- [new 实现](./implement-new.js)
-
-- [instanceOf 实现](./implement-instanceof.js)
+<!-- - [CSS 基础]() -->
 
 > *TO BE CONTINUED...*

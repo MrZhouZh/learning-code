@@ -1,4 +1,4 @@
-const flattern = require("../flattern");
+const flattern = require("../JavaScript/flattern");
 
 const arr = [1, [2, [3, 4], 5], 6, [7, 8], 9, [{ a: 1 }, [{ aa: 1 }]]];
 

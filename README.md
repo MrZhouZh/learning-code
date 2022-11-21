@@ -26,6 +26,8 @@ pnpm test:promise [promise文件路径]
 
 ## Content
 
+- [基础学习](./Basic/README.md)
+
 - [算法学习](./Algo/README.md)
 
 - [设计模式](./Design-pattern/README.md)
