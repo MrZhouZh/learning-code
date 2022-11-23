@@ -16,4 +16,10 @@ title: JavaScript 基础
 
 - [throttle 节流实现](./throttle.js)
 
+- [once 函数仅调用一次](./once.js)
+
+- [sleep 函数实现](./sleep.js)
+
+- [平铺数组转树状结构](./array2Tree.js)
+
 > *TO BE CONTINUED...*
