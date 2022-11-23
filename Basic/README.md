@@ -2,7 +2,7 @@
 title: 基础学习
 ---
 
-## Content
+## 目录
 
 - [JavaScript 基础](./JavaScript/README.md)
 
