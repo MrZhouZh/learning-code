@@ -24,6 +24,8 @@ title: JavaScript 基础
 
 ## 常见问题
 
+<!-- 解答疑问 -->
+
 - [JavaScript 隐式类型转化, 一篇就够了](https://www.freecodecamp.org/chinese/news/javascript-implicit-type-conversion/)
 
     `==` 比较 **5** 大规则:
