@@ -22,4 +22,22 @@ title: JavaScript 基础
 
 - [平铺数组转树状结构](./array2Tree.js)
 
+## 常见问题
+
+- [JavaScript 隐式类型转化, 一篇就够了](https://www.freecodecamp.org/chinese/news/javascript-implicit-type-conversion/)
+
+    `==` 比较 **5** 大规则:
+
+    1. `NaN` 和其他任何类型(包括他自己)比较永远返回 `false`
+
+    2. `Boolean` 和其他任何类型比较, `Boolean` 首先被转换为 `Number` 类型
+
+    3. `String` 和 `Number` 比较, 先将 `String` 转换为 `Number` 类型
+
+    4. 除了 `null == undefined` 返回 `true` 之外, `null`, `undefined` 和其他任何类型比较都返回 `false`
+
+    5. `原始类型` 和 `引用类型` 比较时, `引用类型` 会依照 **`ToPrimitive`** 规则转换为 `原始类型`
+
+        **`ToPrimitive`** 规则遵循先 `valueOf` 后 `toString` 的模式期望得到一个原始类型. 如果还是没法得到一个 `原始类型`, 就会抛出 `TypeError`
+
 > *TO BE CONTINUED...*
