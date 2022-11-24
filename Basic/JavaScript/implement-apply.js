@@ -2,7 +2,7 @@
  * 实现 apply
  * refs: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
  *
- * 实现原理:
+ * 实现原理: 改变 this 指针, 并执行函数返回其结果, 入参仅接收一个参数
  *  判断调用对象是否是函数
  *  判断传入的上下文是否存在, 否则设置为 window
  *  将函数作为上下文的一个属性
