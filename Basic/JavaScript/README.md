@@ -42,4 +42,16 @@ title: JavaScript 基础
 
         **`ToPrimitive`** 规则遵循先 `valueOf` 后 `toString` 的模式期望得到一个原始类型. 如果还是没法得到一个 `原始类型`, 就会抛出 `TypeError`
 
+## 参考链接
+
+- [js源码在哪里](https://juejin.cn/post/6986099390884610079)
+
+- [chrome v8](https://github.com/v8/v8)
+
+- [ECMA规范](https://tc39.es/ecma262/#sec-intro)
+
+- [如何在源码中找到某个方法实现](https://www.zhihu.com/question/59792274)
+
+> 深入的话可通过结合规范查看 JavaScript 源码
+
 > *TO BE CONTINUED...*

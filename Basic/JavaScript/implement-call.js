@@ -2,7 +2,7 @@
  * 实现 call 函数
  * refs: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/call
  *
- * 实现原理:
+ * 实现原理: 改变 this 指针, 并执行函数返回其结果, 参数可多个
  *  判断调用函数是否是对象
  *  判断上下文是否存在, 否则设置为 window
  *  处理传入的函数, 截取第一个参数后的所有参数
@@ -12,7 +12,7 @@
  */
 Function.prototype.mycall = function (ctx) {
   if (typeof this !== "function") {
-    throw new Error("Type Error");
+    throw new TypeError("Type Error");
   }
   let rest = [...arguments].slice(1),
     result = null;
