@@ -37,6 +37,6 @@ pnpm test:promise [promise文件路径]
 
 ## Remote Develop
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#/github.com/MrZhouZh/learning-code.git)
+<!-- [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#/github.com/MrZhouZh/learning-code.git) -->
 
 [![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/github/MrZhouZh/learning-code/main?file=%2FREADME.md)
