@@ -6,4 +6,11 @@ const curry = function (fn, ...args) {
 };
 
 // Test
+function fn(a, b, c, d) {
+  return a + b + c + d;
+}
 
+const add = curry(fn);
+console.log(add(4)(3)(1)(2)); // 10
+console.log(add(1, 3)(4)(2)); // 10
+console.log(add(1)(4, 3, 2)); // 10
