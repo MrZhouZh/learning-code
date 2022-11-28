@@ -22,6 +22,20 @@ title: JavaScript 基础
 
 - [平铺数组转树状结构](./array2Tree.js)
 
+- [apply 实现](./implement-apply.js)
+
+- [call 实现](./implement-call.js)
+
+- [bind 实现](./implement-bind.js)
+
+- [curry 函数柯里化](./curry.js)
+
+- [深拷贝实现](./deepClone.js)
+
+- [Array.from 实现](./array-from.js)
+
+- [寄生组合式继承](./parasitic-combination-inheritance.js)
+
 ## 常见问题
 
 <!-- 解答疑问 -->
