@@ -34,7 +34,27 @@ title: JavaScript 基础
 
 - [Array.from 实现](./array-from.js)
 
+- [Array map 实现](./array-map.js)
+
+- [Array filter 实现](./array-filter.js)
+
+- [Array push 实现](./array-push.js)
+
+- [数组去重](./array-unique.js)
+
 - [寄生组合式继承](./parasitic-combination-inheritance.js)
+
+- [hash route 实现](./route.js)
+
+- [setTimeout 实现 setInterval](./setInterval-by-setTimeout.js)
+
+- [setInterval 实现 setTimeout](./setTimeout-by-setInterval.js)
+
+- [数组随机顺序](./shuffle.js)
+
+- [获取地址参数并返回对象格式](./getUrlParams.js)
+
+
 
 ## 常见问题
 
