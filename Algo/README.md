@@ -18,3 +18,5 @@ title: 算法学习
 - [两数之和](./twoSum.js)
 
 - [有效数字](./isNumber.js)
+
+- [冒泡排序](./bubbleSort.js)
