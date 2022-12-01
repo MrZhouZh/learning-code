@@ -20,3 +20,5 @@ title: 算法学习
 - [有效数字](./isNumber.js)
 
 - [冒泡排序](./bubbleSort.js)
+
+- [插入排序](./insertSort.js)
