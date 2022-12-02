@@ -22,3 +22,5 @@ title: 算法学习
 - [冒泡排序](./bubbleSort.js)
 
 - [插入排序](./insertSort.js)
+
+- [斐波那契数列](./fibonacci.js)
