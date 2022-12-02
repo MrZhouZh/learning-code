@@ -54,6 +54,10 @@ title: JavaScript 基础
 
 - [获取地址参数并返回对象格式](./getUrlParams.js)
 
+- [简易原生 ajax 实现](./pure-ajax.js)
+
+- [promise 封装 ajax](./promise-ajax.js)
+
 
 
 ## 常见问题
