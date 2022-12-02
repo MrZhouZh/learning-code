@@ -1,3 +1,8 @@
+/**
+ * 冒泡排序
+ *
+ * 实现原理: 双层循环比较两个记录键值的大小, 如果这两个记录键值的大小出现逆序, 则交换这两个记录键值
+ */
 let n = 0;
 const bubbleSort = function (arr) {
   for (let i = 1, len = arr.length; i < len; i++) {
