@@ -24,3 +24,5 @@ title: 算法学习
 - [插入排序](./insertSort.js)
 
 - [斐波那契数列](./fibonacci.js)
+
+- [二分查找](./binarySearch.js)
