@@ -23,6 +23,17 @@ title: 算法学习
 
 - [插入排序](./insertSort.js)
 
+- [快速排序](./quickSort.js)
+
 - [斐波那契数列](./fibonacci.js)
 
+- [有效的括号](./isValidBrackets.js)
+
 - [二分查找](./binarySearch.js)
+
+- [二分查找 - 左边界](./binarySearch-leftBound.js)
+
+- [二分查找 - 右边界](./binarySearch-rightBound.js)
+
+- [二分查找 - 极值](./binarySearch-extremum.js)
+

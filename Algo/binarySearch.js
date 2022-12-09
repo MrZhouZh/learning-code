@@ -1,5 +1,6 @@
 /**
  * 二分查找
+ * 只能在升序的数组中使用
  *
  * 实现原理:
  *
@@ -29,4 +30,4 @@ const nums = [1, 2, 3, 4, 5, 6];
 const target = 5;
 const res = binarySearch(nums, target);
 
-console.log(res);
+console.log(res); // 4
