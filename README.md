@@ -28,6 +28,8 @@ pnpm test:promise [promise文件路径]
 
 - [基础学习](./Basic/README.md)
 
+- [TypeScript 学习](./TypeScript/README.md)
+
 - [Vue 学习](./Vue/README.md)
 
 - [算法学习](./Algo/README.md)
